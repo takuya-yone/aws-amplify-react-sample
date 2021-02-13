@@ -15,7 +15,11 @@
       "function": {
         "awsamplifyreactsamplec3c5829": {
           "deploymentBucketName": "amplify-awsamplifyreactsampl-dev-102516-deployment",
-          "s3Key": "amplify-builds/awsamplifyreactsamplec3c5829-4f52334c345375326277-build.zip"
+          "s3Key": "amplify-builds/awsamplifyreactsamplec3c5829-34612b32345a6b54365a-build.zip"
+        },
+        "awsamplifyreactsampl63b0ef99": {
+          "deploymentBucketName": "amplify-awsamplifyreactsampl-dev-102516-deployment",
+          "s3Key": "amplify-builds/awsamplifyreactsampl63b0ef99-6f36532f774d756d7666-build.zip"
         }
       }
     }

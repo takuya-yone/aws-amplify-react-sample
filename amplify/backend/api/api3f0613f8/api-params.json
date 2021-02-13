@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/goodbye",
+            "lambdaFunction": "awsamplifyreactsampl63b0ef99",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/goodbye"
+        }
+    ],
+    "resourceName": "api3f0613f8",
+    "apiName": "api3f0613f8",
+    "functionArns": [
+        {
+            "lambdaFunction": "awsamplifyreactsampl63b0ef99"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-awsamplifyreactsampl-dev-102516-authRole",
+        "unAuthRoleName": "amplify-awsamplifyreactsampl-dev-102516-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "awsamplifyreactsampl63b0ef99",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
