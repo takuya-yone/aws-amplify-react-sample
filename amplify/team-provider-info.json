@@ -10,6 +10,17 @@
       "StackName": "amplify-awsamplifyreactsampl-dev-95042",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:690701631846:stack/amplify-awsamplifyreactsampl-dev-95042/808cd500-6d95-11eb-ac85-060dce13b676",
       "AmplifyAppId": "dtm6prfba63ai"
+    },
+    "categories": {
+      "auth": {
+        "cognito7991cfd5": {}
+      },
+      "function": {
+        "awsamplifyreactsamplb1c01273": {
+          "deploymentBucketName": "amplify-awsamplifyreactsampl-dev-95042-deployment",
+          "s3Key": "amplify-builds/awsamplifyreactsamplb1c01273-2b444538737069505878-build.zip"
+        }
+      }
     }
   }
 }
