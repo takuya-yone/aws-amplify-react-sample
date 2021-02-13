@@ -1,7 +1,7 @@
 {
     "paths": [
         {
-            "name": "/iteeeems",
+            "name": "/items",
             "lambdaFunction": "awsamplifyreactsamplb1c01273",
             "privacy": {
                 "private": true,
@@ -13,7 +13,7 @@
                     "/DELETE"
                 ]
             },
-            "policyResourceName": "/iteeeems"
+            "policyResourceName": "/items"
         }
     ],
     "resourceName": "apib0c15f30",
