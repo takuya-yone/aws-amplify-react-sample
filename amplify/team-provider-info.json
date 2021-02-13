@@ -15,12 +15,15 @@
       "function": {
         "awsamplifyreactsamplec3c5829": {
           "deploymentBucketName": "amplify-awsamplifyreactsampl-dev-102516-deployment",
-          "s3Key": "amplify-builds/awsamplifyreactsamplec3c5829-34612b32345a6b54365a-build.zip"
+          "s3Key": "amplify-builds/awsamplifyreactsamplec3c5829-63703542546e726b4143-build.zip"
         },
         "awsamplifyreactsampl63b0ef99": {
           "deploymentBucketName": "amplify-awsamplifyreactsampl-dev-102516-deployment",
-          "s3Key": "amplify-builds/awsamplifyreactsampl63b0ef99-6f36532f774d756d7666-build.zip"
+          "s3Key": "amplify-builds/awsamplifyreactsampl63b0ef99-6f74796146714e2f374e-build.zip"
         }
+      },
+      "auth": {
+        "awsamplifyreactsampl3c8daa2a": {}
       }
     }
   }

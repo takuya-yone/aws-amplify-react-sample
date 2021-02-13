@@ -15,6 +15,18 @@
     },
     "s3Key": {
       "Type": "String"
+    },
+    "storagedynamo87ae6793Name": {
+      "Type": "String",
+      "Default": "storagedynamo87ae6793Name"
+    },
+    "storagedynamo87ae6793Arn": {
+      "Type": "String",
+      "Default": "storagedynamo87ae6793Arn"
+    },
+    "storagedynamo87ae6793StreamArn": {
+      "Type": "String",
+      "Default": "storagedynamo87ae6793Arn"
     }
   },
   "Conditions": {
@@ -163,6 +175,59 @@
             }
           ]
         }
+      }
+    },
+    "dynamo87ae6793TriggerPolicy": {
+      "DependsOn": [
+        "LambdaExecutionRole"
+      ],
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyName": "lambda-trigger-policy",
+        "Roles": [
+          {
+            "Ref": "LambdaExecutionRole"
+          }
+        ],
+        "PolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Action": [
+                "dynamodb:DescribeStream",
+                "dynamodb:GetRecords",
+                "dynamodb:GetShardIterator",
+                "dynamodb:ListStreams"
+              ],
+              "Resource": [
+                {
+                  "Ref": "storagedynamo87ae6793StreamArn"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "dynamo87ae6793Trigger": {
+      "Type": "AWS::Lambda::EventSourceMapping",
+      "DependsOn": [
+        "dynamo87ae6793TriggerPolicy"
+      ],
+      "Properties": {
+        "BatchSize": 100,
+        "Enabled": true,
+        "EventSourceArn": {
+          "Ref": "storagedynamo87ae6793StreamArn"
+        },
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LambdaFunction",
+            "Arn"
+          ]
+        },
+        "StartingPosition": "LATEST"
       }
     }
   },
